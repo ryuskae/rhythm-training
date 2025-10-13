@@ -1,0 +1,12 @@
+{
+  "name": "osmd-codespace",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bullseye",
+  "forwardPorts": [5173],
+  "portsAttributes": {
+    "5173": {
+      "label": "Vite Dev Server",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "postCreateCommand": "npm i"
+}
