@@ -1,0 +1,131 @@
+/* src/components/RhythmGame.css */
+.rhythm-game {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.question {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.question h2 {
+    margin-bottom: 1rem;
+}
+
+.choices {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.choice-item {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.choice-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.score-view {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    background-color: #f8f9fa;
+}
+
+.choice-controls {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 15px;
+}
+
+.play-button {
+    padding: 6px 12px;
+    border-radius: 4px;
+    background-color: #e9ecef;
+    border: none;
+    cursor: pointer;
+}
+
+.play-button:hover {
+    background-color: #dee2e6;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.radio-label.correct {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.radio-label.incorrect {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.radio-label input[type="radio"] {
+    margin: 0;
+}
+
+.radio-text {
+    font-weight: 500;
+}
+
+.choice-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    min-width: 150px;
+}
+
+.choice-button:disabled {
+    cursor: not-allowed;
+}
+
+.choice-button.correct {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.choice-button.incorrect {
+    background-color: #f44336;
+    color: white;
+}
+
+.result {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.next-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.next-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
